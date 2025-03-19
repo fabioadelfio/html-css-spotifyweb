@@ -87,11 +87,27 @@ ul {
     display: flex;
 }
 
+/* SIDEBAR */
+
 .sidebar {
     width: var(--sidebar-width);
     background-color: #000000;
     font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.playlist {
+    display: none;
+}
+
+.bottom-sidebar .separator {
+    display: none;
+}
+
+/* MAIN CONTENT */
 
 .main-header {
     height: var(--main-header-height);
