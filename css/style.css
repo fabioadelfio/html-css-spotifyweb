@@ -1,3 +1,9 @@
+:root {
+    --player-height: 90px;
+    --sidebar-width: 50px;
+    --main-header-height: 90px;
+}
+
 /* RESET */
 
 * {
@@ -8,6 +14,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 img {
@@ -73,6 +80,37 @@ ul {
     overflow: hidden;
 }
 
+/* TOP CONTENT */
 
+.top-content {
+    height: calc(100vh - var(--player-height));
+    display: flex;
+}
 
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: #000000;
+    font-size: 2rem;
+}
 
+.main-header {
+    height: var(--main-header-height);
+    background-color: #00000077;
+}
+
+.main-content {
+    width: 100%;
+    background-color: #141922;
+}
+
+.content {
+    height: calc(100vh - var(--player-height) - var(--main-header-height));
+    overflow: auto;
+}
+
+/* PLAYER */
+
+.player {
+    height: var(--player-height);
+    background-color: #282828;
+}
