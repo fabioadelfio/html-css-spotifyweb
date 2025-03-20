@@ -208,6 +208,108 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.7rem;
+    color: white;
+}
+
+.player .player-song {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.player-song .player-song-pic img {
+    width: 35px;
+    height: 35px;
+}
+
+.player-song .player-song-info {
+    padding: 0 15px;
+}
+
+.player-song-info .player-song-name{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.player-song-info .info-track {
+    color: #868686;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.player-song .save {
+    color: #868686;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.save div {
+    display: block;
+}
+
+.player .control-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.control-section .commands {
+    width: 200px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commands .play {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player .options {
+    font-size: 0.8rem;
+    padding-right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.options .audio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.audio-bar {
+    background-color: #5A5A5A;
+    height: 0.2rem;
+    width: 80px;
+    border-radius: 30px;
+}
+
+.audio-bar .level-audio {
+    height: 100%;
+    width: 20%;
+    background-color: #C1C1C1;
+    border-radius: 30px;
+}
+
+.progress {
+    display: flex;
+}
+
+.progress .progress-bar {
+    background-color: #5A5A5A;
+    height: 0.2rem;
+    width: 100%;
+    border-radius: 30px;
 }
 
 
