@@ -31,56 +31,75 @@
 
             <section class="sidebar"> 
                 
-                <div class="top-sidebar">
-                    <div class="logo">
-                        <i class="fa-brands fa-spotify"></i> <span>Spotify</span>
+                <div class="logo">
+                    <figure>
+                        <img class="logo-big" src="./img/logo.svg" alt="">
+                        <img class="logo-small" src="./img/logo-small.svg" alt="">
+                    </figure>
+                </div>
+
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#" class="link-item active">
+                                <img src="./img/home.svg" alt="">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-item">
+                                <img src="./img/search.svg" alt="">
+                                <span>Cerca</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-item">
+                                <img src="./img/libreria.svg" alt="">
+                                <span>La tua libreria</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="playlist">
+
+                    <div class="title-section">PLAYLIST</div>
+
+                    <div class="new-playlist-btn">
+
+                        <a href="#">
+                            <div class="square">
+                                <div><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                            <span>Crea Playlist</span>
+                         </a>
+
                     </div>
-                
-                    <div class="menu">
 
-                        <div class="main-menu">
-                            <ul>
-                                <li><a href="#"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
-                                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> <span>Cerca</span></a></li>
-                                <li><a href="#"><i class="fa-solid fa-lines-leaning"></i> <span>La tua libreria</span></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="playlist">
-
-                            <div class="title-section">PLAYLIST</div>
-
-                            <div class="new-playlist">
-
-                                <a href="#">
-                                    <div class="add-btn">+</div>
-                                    <span>Crea Playlist</span>
-                                </a>
-
-                            </div>
-
-                            <div class="playlists">
-                                <ul>
-                                    <li><a href="#"><span>Nome Playlist</span></a></li>
-                                    <li><a href="#"><span>Nome Playlist</span></a></li>
-                                    <li><a href="#"><span>Nome Playlist</span></a></li>
-                                    <li><a href="#"><span>Nome Playlist</span></a></li>
-                                    <li><a href="#"><span>Nome Playlist</span></a></li>
-                                    <li><a href="#"><span>Nome Playlist</span></a></li>
-                                    <li><a href="#"><span>Nome Playlist</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
+                    <div class="playlists">
+                        <ul>
+                            <li><a href="#"><span>Nome Playlist</span></a></li>
+                            <li><a href="#"><span>Nome Playlist</span></a></li>
+                            <li><a href="#"><span>Nome Playlist</span></a></li>
+                            <li><a href="#"><span>Nome Playlist</span></a></li>
+                            <li><a href="#"><span>Nome Playlist</span></a></li>
+                            <li><a href="#"><span>Nome Playlist</span></a></li>
+                            <li><a href="#"><span>Nome Playlist</span></a></li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="bottom-sidebar">
-                    <div class="download"><a href="#"><i class="fa-solid fa-circle-arrow-down"></i> <span>Installa app</span></a></div>
-
-                    <div class="separator"></div>
-
-                    <div class="profile"><a href="#"><i class="fa-solid fa-circle-user"></i> <span><strong>John Doe</strong></span></a></div>
+                <div class="user">
+                    <div class="download">
+                        <img src="./img/download.svg" alt="">
+                        <span>Installa app</span>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-pic-container">
+                            <img class="profile-pic" src="./img/profile.svg" alt="">
+                        </div>
+                        <span class="profile-name">John Doe</span>
+                    </div>
                 </div>
 
             </section>
