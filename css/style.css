@@ -177,7 +177,7 @@ ul {
 
 .main-header {
     height: var(--main-header-height);
-    background-color: #0000006c;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -218,9 +218,18 @@ ul {
     padding-bottom: 20px;
 }
 
-.category.selected span{
-    padding-bottom: 3px;
-    border-bottom: 2px solid #A7F62E;
+.category.selected {
+    position: relative;
+}
+
+.category.selected .border-active {
+    position: absolute;
+    margin-top: 2px;
+    background-color: #74AB1F;
+    padding: 1px 0;
+    width: 30%;
+    right: 50%;
+    transform: translateX(50%);
 }
 
 .recently-played {
@@ -240,14 +249,8 @@ ul {
     gap: 10px;
 }
 
-.recently-played .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
 .card {
-    width: 200px;
+    width: 181px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,6 +259,29 @@ ul {
 .card .card-title {
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.card .card-img {
+    position: relative;
+}
+
+.card-img img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.overlay i {
+    font-size: 3rem;
 }
 
 .subtitle {
@@ -270,6 +296,10 @@ ul {
 }
 
 .popular img {
+    border-radius: 50%;
+}
+
+.popular .overlay {
     border-radius: 50%;
 }
 
@@ -416,9 +446,15 @@ ul {
 .new-playlist-btn:hover span,
 .playlists li:hover span,
 .user .download:hover span,
-.save div:hover i {
+.save div:hover i,
+.category:hover {
     color: white;
     cursor: pointer;
+}
+
+.main-header .upgrade-btn:hover {
+    font-size: 1.1rem;
+    margin: 0 20px;
 }
 
 .player-song .info-track:hover div {
@@ -458,9 +494,11 @@ ul {
     cursor: pointer;
 }
 
-.card-img img:hover {
-    background-color: rgba(0, 0, 0, 0.541);
+.card-img:hover .overlay {
+    display: flex;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -580,8 +618,25 @@ ul {
     }
 
     /* MAIN CONTENT */
-    
 
+    .recently-played {
+        width: 100%
+    }
+    
+    .recently-played .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        min-width: 200px;
+        max-width: 300px;
+        flex: 1 0 0;
+    }
+
+    .cards {
+        flex: 1 0 150px;
+    }
 
     /* PLAYER */
 
@@ -609,6 +664,12 @@ ul {
         display: inline-block; 
         padding-left: 10px;
     }
+}
 
+@media screen and (min-width: 1577px) {
+    .recently-played .cards {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
